@@ -9,6 +9,7 @@ public class Main {
         operativa_cuenta();
     }
 
+    
 	private static void operativa_cuenta() {
 		CCuenta cuenta1;
         double saldoActual;
