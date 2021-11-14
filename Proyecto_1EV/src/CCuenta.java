@@ -3,32 +3,47 @@
  * and open the template in the editor..
  */
 
+/**
+ * 
+ * 
+ * @author rober
+ *
+ */
+
 public class CCuenta {
+	/**
+     *variables privadas y dobles
+     */
 
 
     private String nombre;
     private String cuenta;
     private double saldo;
     private double tipoInteres;
+    
+    
 
 
     public CCuenta()
     {
     }
 
-    public CCuenta(String nom, String cue, double sal, double tipo)
+    public CCuenta(String nom, String cue, double sal, double tipo)//Comentario 1
     {
         nombre =nom;
         cuenta=cue;
         saldo=sal;
     }
 
-    public void asignarNombre(String nom)
+    public void asignarNombre(String nom)//Comentario 2
     {
         setNombre(nom);
     }
 
-    public String obtenerNombre()
+    public String obtenerNombre()/**
+    
+    Más comentarios en javadoc
+    */
     {
         return getNombre();
     }
@@ -39,7 +54,10 @@ public class CCuenta {
         return saldo;
     }
 
-
+    /**
+    @param parametros
+    @throws excepciones
+    */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
